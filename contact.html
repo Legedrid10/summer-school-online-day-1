@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+</head>
+<body>
+
+  <h1>Contact Me</h1>
+
+  <form>
+    Name: <input type="text" name="name" required><br><br>
+    Email: <input type="email" name="email" required><br><br>
+    Phone: <input type="tel" name="phone" pattern="[0-9]{10}" required><br><br>
+    Message:<br>
+    <textarea name="message" required></textarea><br><br>
+
+    <p>Preferred Contact Method:</p>
+    <input type="checkbox" name="method" value="email">Email
+    <input type="checkbox" name="method" value="phone">Phone
+    <input type="checkbox" name="method" value="text">Text<br><br>
+
+    <p>Inquiry Type:</p>
+    <input type="radio" name="type" value="general" required>General
+    <input type="radio" name="type" value="business">Business
+    <input type="radio" name="type" value="support">Support<br><br>
+
+    Select Topic:
+    <select name="topic">
+      <option value="html">HTML</option>
+      <option value="project">Project</option>
+    </select><br><br>
+
+    Select Date: <input type="date" name="date" required><br><br>
+    Priority: <input type="range" name="priority" min="1" max="5"><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
